@@ -2,7 +2,6 @@ package org.example.Controller;
 
 import org.example.AnimalManager.AnimalManager;
 import org.example.Data.*;
-
 import java.util.List;
 import java.util.Scanner;
 
