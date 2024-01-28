@@ -77,7 +77,7 @@ public class AnimalManager {
         }
     }
 
-    public void ViewAnimal() {
+    public void viewAnimal() {
         Integer my_input;
         while (true) {
             System.out.println("1 - Посмотреть собак\n" +
@@ -89,22 +89,22 @@ public class AnimalManager {
             my_input = scanner.nextInt();
             if (my_input.equals(1)) {
                 System.out.println("Вы выбрали 1 опцию");
-                viewAllDogs.ViewDogList(Dog.listOfDogs);
+                viewAllDogs.viewDogList(Dog.listOfDogs);
                 break;
 
             } else if (my_input.equals(2)) {
                 System.out.println("Вы выбрали 2 опцию");
-                viewAllCats.ViewCatList(Cat.listOfCats);
+                viewAllCats.viewCatList(Cat.listOfCats);
                 break;
 
             } else if (my_input.equals(3)) {
                 System.out.println("Вы выбрали 3 опцию");
-                viewAllHorses.ViewHorseList(Horse.listOfHorses);
+                viewAllHorses.viewHorseList(Horse.listOfHorses);
                 break;
 
             } else if (my_input.equals(4)) {
                 System.out.println("Вы выбрали 4 опцию");
-                viewAllDonkeys.ViewDonkeyList(Donkey.listOfDonkeys);
+                viewAllDonkeys.viewDonkeyList(Donkey.listOfDonkeys);
                 break;
 
             } else if (my_input.equals(5)) {
@@ -157,7 +157,7 @@ public class AnimalManager {
         Scanner scanner2 = new Scanner(System.in);
         Integer my_input;
         String my_command;
-        viewAllDogs.ViewDogList(Dog.listOfDogs);
+        viewAllDogs.viewDogList(Dog.listOfDogs);
         System.out.println("Выберите id собаки, которой добавим команду");
         my_input = scanner.nextInt();
         if ((my_input < 0) || (my_input > Dog.listOfDogs.size() - 1)) {
@@ -178,7 +178,7 @@ public class AnimalManager {
         Scanner scanner2 = new Scanner(System.in);
         Integer my_input;
         String my_command;
-        viewAllCats.ViewCatList(Cat.listOfCats);
+        viewAllCats.viewCatList(Cat.listOfCats);
         System.out.println("Выберите id кошки, которой добавим команду");
         my_input = scanner.nextInt();
         if ((my_input < 0) || (my_input > Cat.listOfCats.size() - 1)) {
@@ -199,7 +199,7 @@ public class AnimalManager {
         Scanner scanner2 = new Scanner(System.in);
         Integer my_input;
         String my_command;
-        viewAllHorses.ViewHorseList(Horse.listOfHorses);
+        viewAllHorses.viewHorseList(Horse.listOfHorses);
         System.out.println("Выберите id лошади, которой добавим команду");
         my_input = scanner.nextInt();
         if ((my_input < 0) || (my_input > Dog.listOfDogs.size() - 1)) {
@@ -220,7 +220,7 @@ public class AnimalManager {
         Scanner scanner2 = new Scanner(System.in);
         Integer my_input;
         String my_command;
-        viewAllDonkeys.ViewDonkeyList(Donkey.listOfDonkeys);
+        viewAllDonkeys.viewDonkeyList(Donkey.listOfDonkeys);
         System.out.println("Выберите id ослика, которой добавим команду");
         my_input = scanner.nextInt();
         if ((my_input < 0) || (my_input > Donkey.listOfDonkeys.size() - 1)) {
