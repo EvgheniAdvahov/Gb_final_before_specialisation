@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class AddDog extends AddAnimal implements IAddAnimal{
 
     @Override
-    public void addAnimal() {
+    public  void addAnimal() {
         Dog dog;
         List<String> dogCommands = new ArrayList<>();
         String my_input;

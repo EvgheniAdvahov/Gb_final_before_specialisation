@@ -1,11 +1,12 @@
 package org.example;
 
 import org.example.Controller.Controller;
+import org.example.Controller.SecondController;
 import org.example.Data.Animal;
 import org.example.Data.Cat;
 import org.example.Data.Dog;
 import org.example.Data.Horse;
-import org.example.View.View;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,6 +25,7 @@ public class Main {
         cat.setDateOfBirth(2010, 9, 1);
         cat1.setDateOfBirth(2005, 5, 1);
         Controller controller = new Controller();
+        SecondController secondController = new SecondController();
 //        List<Dog> listOfDogs = Dog.listOfDogs;
 //        List<Animal> union = new ArrayList<>();
 //        List<Animal> union1 = new ArrayList<>();
@@ -38,7 +40,7 @@ public class Main {
 //        for (Animal animal : union) {
 //            System.out.println(animal);
 //        }
-        controller.start();
-
+//        controller.start();
+          secondController.start();
     }
 }

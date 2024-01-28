@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Controller {
-    private AnimalManager animalManager = new AnimalManager();
 
     ViewDogs viewAllDogs = new ViewDogs();
     ViewCats viewAllCats = new ViewCats();
@@ -211,7 +210,7 @@ public class Controller {
     }
 
     public void ViewAllDonkeysList() {
-        viewAllDonkeys.ViewDokeyList(Donkey.listOfDonkeys);
+        viewAllDonkeys.ViewDonkeyList(Donkey.listOfDonkeys);
     }
 
 
