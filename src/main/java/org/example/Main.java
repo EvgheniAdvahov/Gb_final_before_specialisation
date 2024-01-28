@@ -16,15 +16,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Cat cat = new Cat("Кузя", new ArrayList<>(Arrays.asList("Кушать", "Домой")));
-        Cat cat1 = new Cat("Дымок", new ArrayList<>(Arrays.asList("Ко мне")));
-        Dog dog = new Dog("Лиза", new ArrayList<>(Arrays.asList("Cидеть", "Голос")));
-        Dog dog1 = new Dog("Граф", new ArrayList<>(Arrays.asList("Охранять", "Фасс")));
-        dog.setDateOfBirth(1999, 12, 12);
-        dog1.setDateOfBirth(2006, 11, 11);
-        cat.setDateOfBirth(2010, 9, 1);
-        cat1.setDateOfBirth(2005, 5, 1);
-        Controller controller = new Controller();
+
         SecondController secondController = new SecondController();
 //        List<Dog> listOfDogs = Dog.listOfDogs;
 //        List<Animal> union = new ArrayList<>();

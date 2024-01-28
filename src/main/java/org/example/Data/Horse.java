@@ -1,5 +1,6 @@
 package org.example.Data;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,7 @@ public class Horse extends Pack {
         super(name);
         this.commands = commands;
         this.id = horse_counter;
+        setDateOfBirth();
         horse_counter++;
         globalCounter++;
         listOfHorses.add(this);
@@ -33,8 +35,8 @@ public class Horse extends Pack {
 
     @Override
     public String toString() {
-        return "Horse{" + "id=" + getId() + " name=" + getName() +
-                " commands=" + commands + " dateBirth=" + getDateOfBirth() +
+        return "Horse{" + "id= " + getId() + " name= " + getName() +
+                " commands= " + commands + " dateBirth= " + getDateOfBirth() +
                 '}';
     }
 }

@@ -1,11 +1,13 @@
 package org.example.Data;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public abstract class Animal implements Comparable<Animal> {
     private String name;
     public static Integer globalCounter = 0;
     private LocalDate dateOfBirth;
+
 
 
     @Override
@@ -20,7 +22,17 @@ public abstract class Animal implements Comparable<Animal> {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(int year, int month, int day) {
+    public void setDateOfBirth() {
+        int year;
+        int month;
+        int day;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите год рождения");
+        year = scanner.nextInt();
+        System.out.println("Введите месяц рождения");
+        month = scanner.nextInt();
+        System.out.println("Введите день рождения");
+        day = scanner.nextInt();
         this.dateOfBirth = LocalDate.of(year, month, day);
     }
 

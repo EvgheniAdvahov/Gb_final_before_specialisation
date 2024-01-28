@@ -28,7 +28,8 @@ public class SecondController {
                     "2 - Просмотреть бд\n" +
                     "3 - Добавить команду\n" +
                     "4 - Кол-во жиовтных в бд\n" +
-                    "5 - Выход");
+                    "5 - Вывести животных, отсортированных по др\n" +
+                    "6 - Выход");
             System.out.println("Выберите действие");
             my_input = scanner.nextInt();
             if (my_input.equals(1)) {
@@ -48,13 +49,17 @@ public class SecondController {
             } else if (my_input.equals(4)) {
                 System.out.println("Вы выбрали 4 опцию");
                 try {
-                    System.out.println("counter.getGlobalCount() = " + counter.getGlobalCount());
+                    System.out.println("Кол-во животных в бд = " + counter.getGlobalCount());
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
 
             } else if (my_input.equals(5)) {
                 System.out.println("Вы выбрали 5 опцию");
+                animalManager.sortAnimalsByBirthday();
+                break;
+            }else if (my_input.equals(6)) {
+                System.out.println("Вы выбрали 6 опцию");
                 break;
             }
         }

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dog extends Domestic{
+public class Dog extends Domestic {
 
     private Integer id = 0;
     private static Integer dog_counter = 0;
@@ -16,11 +16,11 @@ public class Dog extends Domestic{
         super(name);
         this.commands = commands;
         this.id = dog_counter;
+        setDateOfBirth();
         dog_counter++;
         globalCounter++;
         listOfDogs.add(this);
     }
-
 
 
     public Integer getId() {
@@ -50,10 +50,11 @@ public class Dog extends Domestic{
         return super.getType();
     }
 
+
     @Override
     public String toString() {
-        return "Dog{ "+ "id=" + getId() +" name=" + getName() + " " +
-                " command=" + commands + " dateBirth=" + getDateOfBirth() +
+        return "Dog{ " + "id= " + getId() + " name= " + getName() + " " +
+                " command= " + commands + " dateBirth= " + getDateOfBirth() +
                 '}';
     }
 

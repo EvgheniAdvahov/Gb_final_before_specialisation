@@ -15,6 +15,7 @@ public class Cat extends Domestic {
         super(name);
         this.commands = commands;
         this.id = cat_counter;
+        setDateOfBirth();
         cat_counter++;
         globalCounter++;
         listOfCats.add(this);
@@ -36,8 +37,9 @@ public class Cat extends Domestic {
 
     @Override
     public String toString() {
-        return "Cat{" + "id=" + getId() + " name=" + getName() +
-                " commands=" + commands + " dateBirth=" + getDateOfBirth() +
+        return "Cat{" + "id= " + getId() + " name= " + getName() +
+                " commands= " + commands + " dateBirth= " + getDateOfBirth() +
                 '}';
     }
+
 }

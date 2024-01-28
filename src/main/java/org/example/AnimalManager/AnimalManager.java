@@ -7,6 +7,8 @@ import org.example.View.ViewDogs;
 import org.example.View.ViewDonkeys;
 import org.example.View.ViewHorses;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -23,6 +25,19 @@ public class AnimalManager {
     ViewCats viewAllCats = new ViewCats();
     ViewHorses viewAllHorses = new ViewHorses();
     ViewDonkeys viewAllDonkeys = new ViewDonkeys();
+
+    public void sortAnimalsByBirthday(){
+        List<Animal> union = new ArrayList<>();
+        union.addAll(Dog.listOfDogs);
+        union.addAll(Cat.listOfCats);
+        union.addAll(Horse.listOfHorses);
+        union.addAll(Donkey.listOfDonkeys);
+        Collections.sort(union);
+        System.out.println("==========");
+        for (Animal animal : union) {
+            System.out.println(animal);
+        }
+    }
 
     public void addCommandToAnimal() {
         Integer my_input;

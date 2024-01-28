@@ -14,6 +14,7 @@ public class Donkey extends Pack {
         super(name);
         this.commands = commands;
         this.id = donkey_counter;
+        setDateOfBirth();
         donkey_counter++;
         globalCounter++;
         listOfDonkeys.add(this);
@@ -35,8 +36,8 @@ public class Donkey extends Pack {
 
     @Override
     public String toString() {
-        return "Dunkey{" + "id=" + getId() + " name=" + getName() +
-                " commands=" + commands + " dateBirth=" + getDateOfBirth() +
+        return "Dunkey{" + "id= " + getId() + " name= " + getName() +
+                " commands= " + commands + " dateBirth= " + getDateOfBirth() +
                 '}';
     }
 
